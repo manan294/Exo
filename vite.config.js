@@ -5,4 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  base: "/Exo/",   // <-- ADD THIS LINE
 })
