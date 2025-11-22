@@ -12,7 +12,7 @@ const Navbar = () => {
                     <IoMenuSharp />
                 </span>
                 <div className='links hidden sm:flex gap-10'>
-                    {["Work", "Studio", "News", "Contact"].map((items, index) => <a className='text-xs font-light' key={index}>{items}</a>)}
+                    {["Work", "Studio", "News", "Contact"].map((items, index) => <a className='text-regular font-light' key={index}>{items}</a>)}
                 </div>
 
             </div>
