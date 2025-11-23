@@ -15,9 +15,9 @@ const Landing = () => {
                         <p className='text-md font-regular sm:text-2xl'>live,  work, and unwind.</p>
                     </div>
                     <div className='headings text-white mt-5 sm:mt-10'>
-                        <h1 className='text-6xl tracking-tighter sm:text-[35vh] leading-none'>Digital</h1>
-                        <h1 className='text-6xl tracking-tighter sm:text-[35vh] leading-none'>Design</h1>
-                        <h1 className='text-6xl tracking-tighter sm:text-[35vh] leading-none'>Experience</h1>
+                        <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-none'>Digital</h1>
+                        <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-none'>Design</h1>
+                        <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-none'>Experience</h1>
                     </div>
                     <div className='sm:w-1/3 para-2 text-white mt-20'>
                         <p className='sm:text-xl'>We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand and product in the digital space. <br /> Unforgettable journeys start with a click.</p>
