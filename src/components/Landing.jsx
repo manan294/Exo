@@ -2,7 +2,7 @@ import React from 'react'
 
 const Landing = () => {
     return (
-        <div className='relative w-full h-[250vh]'>
+        <div className='relative w-full h-[150vh] sm:h-[250vh]'>
             <div className='picture w-full h-full'>
                 <img className='w-full h-full object-cover' src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)" alt="" />
             </div>
@@ -20,8 +20,8 @@ const Landing = () => {
                         <h1 className='text-6xl tracking-tighter sm:text-[35vh] leading-none'>Experience</h1>
                     </div>
                     <div className='sm:w-1/3 para-2 text-white mt-20'>
-                        <p className=' text-[18px] mb-8 tracking-[0.2vw] leading-[1.3]'>We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand and product in the digital space. <br /> Unforgettable journeys start with a click.</p>
-                        <a className='border-b-[0.2vh] pb-[0.05vh] ' href="">The Studio</a>
+                        <p className='sm:text-xl'>We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand and product in the digital space. <br /> Unforgettable journeys start with a click.</p>
+                        <a className='border-b-[0.2vh] pb-[0.05vh] inline-block mt-5' href="">The Studio</a>
                     </div>
                 </div>
             </div>
