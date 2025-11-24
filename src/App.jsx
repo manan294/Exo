@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import Work from './components/Work'
 import Playreel from './components/Playreel'
+import Images from './components/Images'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Landing/>
       <Work/>
       <Playreel/>
+      <Images/>
     </div>
   )
 }
