@@ -4,6 +4,7 @@ import Landing from './components/Landing'
 import Work from './components/Work'
 import Playreel from './components/Playreel'
 import Images from './components/Images'
+import Spread from './components/Spread'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Work/>
       <Playreel/>
       <Images/>
+      <Spread/>
     </div>
   )
 }

@@ -17,7 +17,7 @@ const Playreel = () => {
                     <div className='text-4xl sm:text-8xl font-light'>Play</div>
                     <div className='text-4xl sm:text-8xl font-light'>Reel</div>
                 </h1>
-                <p className='text-white text-center px-10 text-xs'>Our work is best experienced in motion. Don’t forget to put on your headphones.</p>
+                <p className='text-white text-center px-10 text-xs sm:text-[1.12rem] sm:px-[37%] sm:mt-10'>Our work is best experienced in motion. Don’t forget to put on your headphones.</p>
             </div>
 
         </div>
