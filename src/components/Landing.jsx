@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Landing = () => {
+
     return (
         <div className='relative w-full h-[150vh] sm:h-[250vh]'>
             <div className='picture w-full h-full'>
