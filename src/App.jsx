@@ -5,8 +5,15 @@ import Work from './components/Work'
 import Playreel from './components/Playreel'
 import Images from './components/Images'
 import Spread from './components/Spread'
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 const App = () => {
+
+
+const locomotiveScroll = new LocomotiveScroll();
+
+
   return (
     <div className='w-full overflow-auto min-h-screen'>
       <Navbar/>
