@@ -1,10 +1,49 @@
-import React from 'react'
+import gsap, { Power4, ScrollTrigger } from 'gsap/all'
+import React, { useEffect, useRef } from 'react'
 
 const Playreel = () => {
-    return (
-        <div className='w-full relative h-[100vh] overflow-hidden bg-black'>
+    const parent = useRef(null)
+    const videodiv = useRef(null)
+    const play = useRef(null)
+    const reel = useRef(null)
 
-            <div className='w-40 sm:w-96 overflow-hidden aspect-video absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: parent.current,
+                top: "0 0",
+                pin: true,
+                scrub: 1,
+                markers: false
+            }
+        })
+
+        tl.to(videodiv.current, {
+            width: "90%",
+            hieght: "90%",
+            ease: Power4,
+        }, 'a')
+
+            .to(play.current, {
+                x: "100%",
+                ease: Power4,
+                scale: .5,
+
+            }, 'a')
+
+
+            .to(reel.current, {
+                x: "-100%",
+                ease: Power4,
+                scale: .5,
+
+            }, 'a')
+    })
+    return (
+        <div ref={parent} className='w-full relative h-[100vh] overflow-hidden bg-black'>
+
+            <div ref={videodiv} className='w-40 sm:w-96 overflow-hidden aspect-video absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                 <video loop muted autoPlay className='w-full h-full scale-[2.5] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' src="https://player.vimeo.com/progressive_redirect/playback/914803778/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5344c0e4fea63ca54bb433621ca0be7b9470b475583fa68b26de2b6e380a390a"></video>
             </div>
 
@@ -14,8 +53,8 @@ const Playreel = () => {
                     <h3 className='text-white text-sm font-regular'>Work in motion</h3>
                 </div>
                 <h1 className='flex w-full text-white items-center justify-center gap-32 sm:gap-96'>
-                    <div className='text-4xl sm:text-8xl font-light'>Play</div>
-                    <div className='text-4xl sm:text-8xl font-light'>Reel</div>
+                    <div ref={play} className='text-4xl sm:text-8xl font-light'>Play</div>
+                    <div ref={reel} className='text-4xl sm:text-8xl font-light'>Reel</div>
                 </h1>
                 <p className='text-white text-center px-10 text-xs sm:text-[1.12rem] sm:px-[37%] sm:mt-10'>Our work is best experienced in motion. Don’t forget to put on your headphones.</p>
             </div>
