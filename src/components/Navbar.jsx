@@ -6,8 +6,8 @@ import { Power4 } from 'gsap/all';
 
 const Navbar = () => {
     return (
-        <div className='w-full fixed z-[999] '>
-            <div className='max-w-screen-2xl mx-auto flex items-center justify-between text-white px-5 py-5 sm:py-10 sm:px-10'>
+        <div className='w-full fixed z-[999]'>
+            <div className='max-w-screen-2xl mx-auto flex items-center justify-between mix-blend-difference text-white px-5 py-5 sm:py-10 sm:px-10'>
                 <motion.div 
                 initial={{opacity:0}} 
                 whileInView={{opacity:1}}
@@ -20,7 +20,7 @@ const Navbar = () => {
                  initial={{opacity:0}} 
                 whileInView={{opacity:1}}
                 transition={{ease:Power4.easeInOut,duration:1}} 
-                className='sm:hidden'>
+                className='sm:hidden mix-blend-difference'>
                     <IoMenuSharp />
                 </motion.span>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                 initial={{opacity:0}} 
                 whileInView={{opacity:1}}
                 transition={{ease:Power4.easeInOut,duration:1}} 
-                className='links hidden sm:flex gap-10'>
+                className='links hidden sm:flex gap-10 mix-blend-difference'>
                     {["Work", "Studio", "News", "Contact"].map((items, index) => <a className='text-regular font-light' key={index}>{items}</a>)}
                 </motion.div>
 
