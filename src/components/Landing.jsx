@@ -44,7 +44,7 @@ const Landing = () => {
                                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
                                     animate={{ rotate: 0, y: 0, opacity: 1 }}
                                     transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay:3.2 + index * 0.15  }}
-                                    className='inline-block origin-left sm:text-left'>
+                                    className='inline-block origin-left font-semibold sm:text-left'>
                                     {items}
                                 </motion.span>
                             </h1>
