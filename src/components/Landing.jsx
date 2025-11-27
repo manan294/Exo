@@ -35,7 +35,7 @@ const Landing = () => {
                         {["Digital", "Design", "Experience"].map((items, index) => (
 
                             <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-20 sm:font-normal
- sm:leading-50 overflow-hidden'>
+                                 sm:leading-50 overflow-hidden'>
                                 <motion.span
                                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
                                     animate={{ rotate: 0, y: 0, opacity: 1 }}
