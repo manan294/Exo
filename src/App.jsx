@@ -6,6 +6,7 @@ import Playreel from './components/Playreel'
 import Images from './components/Images'
 import Spread from './components/Spread'
 import LocomotiveScroll from 'locomotive-scroll';
+import Loader from './components/Loader'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <div className='w-full overflow-auto bg-black min-h-screen'>
+      {/* <Loader/> */}
       <Navbar/>
       <Landing/>
       <Work/>

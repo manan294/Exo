@@ -24,7 +24,7 @@ const Landing = () => {
                                     <motion.span
                                         initial={{ rotate: 90, y: "100%", opacity: 0 }}
                                         animate={{ rotate: 0, y: 0, opacity: 1 }}
-                                        transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay: index * .2 }}
+                                        transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay:index * 0.15   }}
                                         className='inline-block origin-left'>
                                         {items}
                                     </motion.span>
@@ -43,7 +43,7 @@ const Landing = () => {
                                 <motion.span
                                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
                                     animate={{ rotate: 0, y: 0, opacity: 1 }}
-                                    transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay: 1 + index * .15 }}
+                                    transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay:index * 0.15  }}
                                     className='inline-block origin-left sm:text-left'>
                                     {items}
                                 </motion.span>
