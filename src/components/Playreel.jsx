@@ -20,8 +20,8 @@ const Playreel = () => {
         })
 
         tl.to(videodiv.current, {
-            width: "90%",
-            height: "90%",
+            width: "100%",
+            height: "100%",
             ease: Power4,
         }, 'a')
 

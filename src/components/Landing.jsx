@@ -16,7 +16,7 @@ const Landing = () => {
             </div>
 
             <div className='w-full absolute top-0'>
-                <div className=' max-w-screen-2xl mx-auto px-5 sm:px-10'>
+                <div className=' max-w-screen-2xl mx-auto px-5 sm:px-30'>
                     <div className='para mt-72 sm:mt-96 text-white'>
                         {[" Global digital design studio patnering", "with brands and buisnesses that create", "exceptional experience where people", " live,  work, and unwind."]
                             .map((items, index) =>
@@ -38,13 +38,13 @@ const Landing = () => {
                     <div className='headings text-white mt-5 sm:mt-10'>
                         {["Digital", "Design", "Experience"].map((items, index) => (
 
-                            <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-25 sm:font-normal
+                            <h1 className='text-6xl tracking-tighter  sm:text-[39vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-25 sm:font-normal
                                  sm:leading-50 overflow-hidden'>
                                 <motion.span
                                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
                                     animate={{ rotate: 0, y: 0, opacity: 1 }}
                                     transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay: 1 + index * .15 }}
-                                    className='inline-block origin-left'>
+                                    className='inline-block origin-left sm:text-left'>
                                     {items}
                                 </motion.span>
                             </h1>
