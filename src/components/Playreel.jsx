@@ -28,7 +28,6 @@ const Playreel = () => {
             .to(play.current, {
                 x: "100%",
                 ease: Power4,
-                scale: .5,
 
             }, 'a')
 
@@ -36,7 +35,6 @@ const Playreel = () => {
             .to(reel.current, {
                 x: "-100%",
                 ease: Power4,
-                scale: .5,
 
             }, 'a')
     })
