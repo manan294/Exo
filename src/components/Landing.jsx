@@ -38,13 +38,13 @@ const Landing = () => {
                     <div className='headings text-white mt-5 sm:mt-10'>
                         {["Digital", "Design", "Experience"].map((items, index) => (
 
-                            <h1 className='text-6xl tracking-tighter  sm:text-[39vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-25 sm:font-normal
+                            <h1 className='text-6xl tracking-tighter  sm:text-[33vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-25 sm:font-base
                                  sm:leading-50 overflow-hidden'>
                                 <motion.span
                                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
                                     animate={{ rotate: 0, y: 0, opacity: 1 }}
                                     transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, delay:3.2 + index * 0.15  }}
-                                    className='inline-block origin-left font-semibold sm:text-left'>
+                                    className='inline-block origin-left font-semibold'>
                                     {items}
                                 </motion.span>
                             </h1>
