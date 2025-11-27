@@ -32,7 +32,7 @@ const Loader = () => {
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
-                            className='text-normal font-semibold tracking-tight sm:text-sm'>Exoape ©294 studio 2025</motion.h1>
+                            className='text-normal font-semibold tracking-tight sm:text-sm'>Exoape ©Manan294 studio 2025</motion.h1>
                     </div>
                 </div>
             </div>
