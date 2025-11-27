@@ -13,7 +13,7 @@ const Work = () => {
 
 
     return (
-        <div className='w-full relative'>
+        <div className='w-full relative bg-white'>
             <div className='max-w-screen-2xl mx-auto px-5 py-20 sm:px-25'>
                 <div className='featured flex gap-3'>
                     <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4" data-v-669b4a84=""><path d="M7.41908 4.56679L6.13722 0L4.85418 4.92566L0 6L4.85418 7.25435L6.13722 12L7.3276 7.25435L12 6L7.41908 4.56679Z" fill="currentColor" data-v-669b4a84=""></path></svg>

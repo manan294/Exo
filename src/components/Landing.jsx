@@ -5,7 +5,11 @@ import { Expo, Power4 } from 'gsap/all'
 const Landing = () => {
 
     return (
-        <div className='relative w-full h-[150vh] sm:h-[250vh]'>
+        <motion.div
+            initial={{ rotate: 10, y: 200, opacity: 0 }}
+            animate={{ rotate: 0, y: 0, opacity: 1 }}
+            transition={{ ease: [0.22, 1, 0.36, 1], duration: 1.2,}}
+            className='relative w-full h-[150vh] origin-left sm:h-[250vh]'>
 
             <div className='picture w-full h-full overflow-hidden'>
                 <img data-scroll data-scroll-speed="-1" className='w-full h-full object-cover' src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)" alt="" />
@@ -34,7 +38,7 @@ const Landing = () => {
                     <div className='headings text-white mt-5 sm:mt-10'>
                         {["Digital", "Design", "Experience"].map((items, index) => (
 
-                            <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-20 sm:font-normal
+                            <h1 className='text-6xl tracking-tighter sm:text-[39vh] font-light leading-10 py-5 sm:py-25 -mt-5 sm:-mt-25 sm:font-normal
                                  sm:leading-50 overflow-hidden'>
                                 <motion.span
                                     initial={{ rotate: 90, y: "100%", opacity: 0 }}
@@ -56,7 +60,7 @@ const Landing = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
 
     )
 }

@@ -15,7 +15,7 @@ const locomotiveScroll = new LocomotiveScroll();
 
 
   return (
-    <div className='w-full overflow-auto min-h-screen'>
+    <div className='w-full overflow-auto bg-black min-h-screen'>
       <Navbar/>
       <Landing/>
       <Work/>

@@ -34,7 +34,7 @@ const Images = () => {
     return (
 
 
-        <div className='overflow-hidden'>
+        <div className='overflow-hidden bg-white'>
             <div ref={parent} className='w-full h-[70vh] sm:h-[170vh] flex items-center justify-center bg-white-500'>
                 <div className='w-[35%] sm:w-[26%] sm:h-[94.5vh] h-1/2 relative'>
                     <div ref={first} className='absolute top-6 -right-[7.5vw] w-16 h-23 sm:w-44 sm:h-65 overflow-hidden'>

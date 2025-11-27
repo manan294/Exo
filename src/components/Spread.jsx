@@ -2,7 +2,7 @@ import React from 'react'
 
 const Spread = () => {
   return (
-    <div className='w-full h-[65vh] sm:h-[100vh] sm:py-20'>
+    <div className='w-full h-[65vh] sm:h-[100vh] sm:py-20 bg-white'>
 
 <div className='flex flex-col items-center justify-between sm:gap-9 py-10'>
 
