@@ -21,11 +21,11 @@ const Work = () => {
                 </div>
                 <h1 className='text-[17vw] font-normal tracking-tight my-3'>
                     <motion.span
-                        initial={{ rotate: 90, y: "40%", opacity: 0 }}
+                        initial={{  y: "100%", opacity: 0 }}
                         whileInView={{ rotate: 0, y: 0, opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ ease: [0.22, 1, 0.36, 1], duration: 1, }}
-                        className='inline-block origin-left'>
+                        className='inline-block'>
                         Work
                     </motion.span>
                 </h1>
@@ -34,7 +34,7 @@ const Work = () => {
                 <div className='elems mt-10 sm:flex sm:gap-[6.5vh] flex-wrap'>
                     {elems.map((items, index) => {
 
-                        return <div className='elem w-full sm:w-[48%] mt-15'>
+                        return <div key={index} className='elem w-full sm:w-[48%] mt-15'>
 
                             <div className='video border-none rounded-lg  shadow-lg shadow-zinc-500/50 w-full relative overflow-hidden h-[104vw] sm:h-[100vh] sm:w-[90vh]  '>
                                 <motion.img

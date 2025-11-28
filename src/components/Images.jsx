@@ -11,23 +11,21 @@ const Images = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: parent.current,
-                start: "0 60%",
+                start: "0 55%",
                 scrub: 1,
 
             }
         });
         tl.to(first.current, {
-            x: "90%",
+            x: "100%",
             ease: Linear,
         }, 'b')
             .to(second.current, {
-                x: "-90%",
+                x: "-100%",
                 ease: Linear,
             }, 'b')
-            .to(parent.current,{
-                scale:1.3,
-            })
-           
+
+
     })
 
 
@@ -43,7 +41,13 @@ const Images = () => {
                     <div ref={second} className='absolute top-47 right-[15.5vw] w-33 h-23 sm:w-100 sm:h-65 overflow-hidden'>
                         <img className='w-full h-full object-cover' src="https://a.storyblok.com/f/133769/758x508/8a1ff60d00/home-news-4.jpg/m/1200x804/filters:quality(90)" alt="" />
                     </div>
-                    <img className='w-full h-full object-cover' src="https://a.storyblok.com/f/133769/748x1278/5784aa7150/home-news-1.jpg/m/1200x2050/filters:quality(90)" alt="" />
+
+                        <img className='w-full h-full object-cover' src="https://a.storyblok.com/f/133769/748x1278/5784aa7150/home-news-1.jpg/m/1200x2050/filters:quality(90)" alt="" />
+
+
+              
+
+
                 </div>
 
             </div>
